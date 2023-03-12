@@ -55,7 +55,8 @@ document.getElementById('calculate_budget').addEventListener('click', function()
 })
 document.getElementById('calculate_total_budget').addEventListener('click', function(){
     const perPlayerBudget = document.getElementById('player_expense');
-    const playerTotalBudget = parseFloat(perPlayerBudget.innerText)
+    const playerTotalBudget = parseFloat(perPlayerBudget.innerText);
+    
     const managerBudgetId = getInputValue('manager_budget');
     const managerBudget = managerBudgetId.value;
     managerBudgetId.value = '';
